@@ -126,6 +126,7 @@ func TestMaxPayloadOverrun(t *testing.T) {
 }
 
 func TestAsyncInfoWithSmallerMaxPayload(t *testing.T) {
+	t.Skip("FIXME generate test server config")
 	s, opts := runOperatorServer(t)
 	defer s.Shutdown()
 
