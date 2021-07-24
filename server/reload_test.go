@@ -2746,13 +2746,13 @@ func TestConfigReloadAccountNKeyUsers(t *testing.T) {
 		synadia {
 			users = [
 				# Derek
-				{nkey : UCNGL4W5QX66CFX6A6DCBVDH5VOHMI7B2UZZU7TXAUQQSI2JPHULCKBR}
+				{nkey : 5502fb61e291bbf0ef3044477019f1be3d5f53d232dc55c924127d41b6ed621c72c9c801}
 			]
 		}
 		nats.io {
 			users = [
 				# Ivan
-				{nkey : UDPGQVFIWZ7Q5UH4I5E6DBCZULQS6VTVBG6CYBD7JV3G3N2GMQOMNAUH}
+				{nkey : 55021df89f610bcd8dadda3636cd4d14654493bdfd43702775d92f1c3f6c31ef0fff3b65}
 			]
 		}
 	}
@@ -2764,8 +2764,8 @@ func TestConfigReloadAccountNKeyUsers(t *testing.T) {
 	synadia, _ := s.LookupAccount("synadia")
 	nats, _ := s.LookupAccount("nats.io")
 
-	seed1 := []byte("SUAPM67TC4RHQLKBX55NIQXSMATZDOZK6FNEOSS36CAYA7F7TY66LP4BOM")
-	seed2 := []byte("SUAIS5JPX4X4GJ7EIIJEQ56DH2GWPYJRPWN5XJEDENJOZHCBLI7SEPUQDE")
+	seed1 := []byte("535547647219bd657110e3a1c14b82efe94c32de03740e42fae1e77192543d61868481939ced5277487e6c92")
+	seed2 := []byte("5355be37ce847abfc1165cc8d38fd182f5efc9bc01d69645f980e995323316ecda6df96b3d72cb18f4e418e0")
 
 	kp, _ := nkeys.FromSeed(seed1)
 	pubKey, _ := kp.PublicKey()
@@ -2834,14 +2834,14 @@ func TestConfigReloadAccountNKeyUsers(t *testing.T) {
 	authorization {
 		users = [
 			# Ivan
-			{nkey : UDPGQVFIWZ7Q5UH4I5E6DBCZULQS6VTVBG6CYBD7JV3G3N2GMQOMNAUH}
+			{nkey : 55021df89f610bcd8dadda3636cd4d14654493bdfd43702775d92f1c3f6c31ef0fff3b65}
 		]
 	}
 	accounts {
 		nats.io {
 			users = [
 				# Derek
-				{nkey : UCNGL4W5QX66CFX6A6DCBVDH5VOHMI7B2UZZU7TXAUQQSI2JPHULCKBR}
+				{nkey : 5502fb61e291bbf0ef3044477019f1be3d5f53d232dc55c924127d41b6ed621c72c9c801}
 			]
 		}
 	}
@@ -2855,14 +2855,14 @@ func TestConfigReloadAccountNKeyUsers(t *testing.T) {
 	if n := len(nkeys); n != 2 {
 		t.Fatalf("NKeys map should have 2 users, got %v", n)
 	}
-	derek := nkeys["UCNGL4W5QX66CFX6A6DCBVDH5VOHMI7B2UZZU7TXAUQQSI2JPHULCKBR"]
+	derek := nkeys["5502fb61e291bbf0ef3044477019f1be3d5f53d232dc55c924127d41b6ed621c72c9c801"]
 	if derek == nil {
 		t.Fatal("NKey for user Derek not found")
 	}
 	if derek.Account == nil || derek.Account.Name != "nats.io" {
 		t.Fatalf("Invalid account for user Derek: %#v", derek.Account)
 	}
-	ivan := nkeys["UDPGQVFIWZ7Q5UH4I5E6DBCZULQS6VTVBG6CYBD7JV3G3N2GMQOMNAUH"]
+	ivan := nkeys["55021df89f610bcd8dadda3636cd4d14654493bdfd43702775d92f1c3f6c31ef0fff3b65"]
 	if ivan == nil {
 		t.Fatal("NKey for user Ivan not found")
 	}
