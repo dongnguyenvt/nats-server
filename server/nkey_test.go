@@ -208,7 +208,7 @@ func TestMixedClientConfig(t *testing.T) {
 	confFileName := createConfFile(t, []byte(`
     authorization {
       users = [
-        {nkey: "UDKTV7HZVYJFJN64LLMYQBUR6MTNNYCDC3LAZH4VHURW3GZLL3FULBXV"}
+        {nkey: "550266da379f4abe3f9d4090a5640cc4ece80abde1bbabd929cb24e57cc822b330d82eec"}
         {user: alice, password: foo}
       ]
     }`))

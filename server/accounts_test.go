@@ -584,7 +584,6 @@ func TestAccountParseConfigDuplicateUsers(t *testing.T) {
 }
 
 func TestAccountParseConfigImportsExports(t *testing.T) {
-	t.Skip("FIXME generate test server config")
 	opts, err := ProcessConfigFile("./configs/accounts.conf")
 	if err != nil {
 		t.Fatal("parsing failed: ", err)
@@ -609,12 +608,12 @@ func TestAccountParseConfigImportsExports(t *testing.T) {
 	if natsAcc == nil {
 		t.Fatalf("Error retrieving account for 'nats.io'")
 	}
-	if natsAcc.Nkey != "AB5UKNPVHDWBP5WODG742274I3OGY5FM3CBIFCYI4OFEH7Y23GNZPXFE" {
+	if natsAcc.Nkey != "41021ce2b4c8e9d507d43d87ea776f9269246bbcfbc270bfdec7647282eb2d0b7939b9ee" {
 		t.Fatalf("Expected nats account to have an nkey, got %q\n", natsAcc.Nkey)
 	}
 	// Check user assigned to the correct account.
 	for _, nk := range opts.Nkeys {
-		if nk.Nkey == "UBRYMDSRTC6AVJL6USKKS3FIOE466GMEU67PZDGOWYSYHWA7GSKO42VW" {
+		if nk.Nkey == "5502a2721bb3edb4ec9541abbe34bd4dd67dc8f481bc264b75aa3bb559a27ce32ad9bf42" {
 			if nk.Account != natsAcc {
 				t.Fatalf("Expected user to be associated with natsAcc, got %q\n", nk.Account.Name)
 			}
