@@ -108,7 +108,6 @@ func TestAccountIsolation(t *testing.T) {
 }
 
 func TestAccountIsolationExportImport(t *testing.T) {
-	t.Skip("FIXME generate test server config")
 	checkIsolation := func(t *testing.T, pubSubj string, ncExp, ncImp *nats.Conn) {
 		// We keep track of 2 subjects.
 		// One subject (pubSubj) is based off the stream import.
