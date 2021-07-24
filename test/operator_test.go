@@ -34,10 +34,10 @@ const (
 
 // This matches ./configs/nkeys_jwts/test.seed
 // Test operator seed.
-var oSeed = []byte("SOAFYNORQLQFJYBYNUGC5D7SH2MXMUX5BFEWWGHN3EK4VGG5TPT5DZP7QU")
+var oSeed = []byte("534f4a740f03e0ea831045bd792fea955059d1d7a0410a3ecb685030e1c90c0278fa20b8f301803081007630")
 
 // This is a signing key seed.
-var skSeed = []byte("SOAEL3NFOTU6YK3DBTEKQYZ2C5IWSVZWWZCQDASBUOHJKBFLVANK27JMMQ")
+var skSeed = []byte("534ffbfeb9a7584ced5eb9c69739a292c6a1ffdf4a13d4d35765fb3f42d62e417d34a299e63e791d45ee0294")
 
 func checkKeys(t *testing.T, opts *server.Options, opc *jwt.OperatorClaims, expected int) {
 	// We should have filled in the TrustedKeys here.
