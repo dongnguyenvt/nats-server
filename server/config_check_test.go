@@ -21,7 +21,6 @@ import (
 )
 
 func TestConfigCheck(t *testing.T) {
-	t.Skip("FIXME generate test server config")
 	tests := []struct {
 		// name is the name of the test.
 		name string
@@ -498,13 +497,13 @@ func TestConfigCheck(t *testing.T) {
 		  # synadia > nats.io, cncf
 		  #
 		  synadia {
-		    # SAADJL5XAEM6BDYSWDTGVILJVY54CQXZM5ZLG4FRUAKB62HWRTPNSGXOHA
-		    nkey = "AC5GRL36RQV7MJ2GT6WQSCKDKJKYTK4T2LGLWJ2SEJKRDHFOQQWGGFQL"
+		    # 534180935730aeb358bf94ef8cdd13cec6bc7ba31900fcf89c1303d4d4035f7478f0acfb12fa726cb3dbcf80
+		    nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 		    users [
 		      {
-		        # SUAEL6RU3BSDAFKOHNTEOK5Q6FTM5FTAMWVIKBET6FHPO4JRII3CYELVNM
-		        nkey = "UCARKS2E3KVB7YORL2DG34XLT7PUCOL2SVM7YXV6ETHLW6Z46UUJ2VZ3"
+		        # 5355c7d3c9d0004fa639fda9f582aa544425c0b7890ee0f36957778d3abb5bf1c48b77c9d6a69618eea2dcd0
+		        nkey = "5503902c8ff1f921872ef764c4a29c9701643f38fda1d6e743636f727df7119c3ba545c9"
 		      }
 		    ]
 
@@ -517,13 +516,13 @@ func TestConfigCheck(t *testing.T) {
 		  # nats < synadia
 		  #
 		  nats {
-		    # SUAJTM55JH4BNYDA22DMDZJSRBRKVDGSLYK2HDIOCM3LPWCDXIDV5Q4CIE
-		    nkey = "ADRZ42QBM7SXQDXXTSVWT2WLLFYOQGAFC4TO6WOAXHEKQHIXR4HFYJDS"
+		    # 534180935730aeb358bf94ef8cdd13cec6bc7ba31900fcf89c1303d4d4035f7478f0acfb12fa726cb3dbcf80
+		    nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 		    users [
 		      {
-		        # SUADZTYQAKTY5NQM7XRB5XR3C24M6ROGZLBZ6P5HJJSSOFUGC5YXOOECOM
-		        nkey = "UD6AYQSOIN2IN5OGC6VQZCR4H3UFMIOXSW6NNS6N53CLJA4PB56CEJJI"
+		        # 5355a2315533ef1ed2f21933ff00b9424f5661c27b3efa871161f9fda42dfc60e569c5bf49bf4c8e3d565dbb
+		        nkey = "5502d826db4efcd16a4c6d7ca543f2fa00a04a06f3a331fd2ed2dc0af68cd269babf7fc1"
 		      }
 		    ]
 
@@ -537,13 +536,13 @@ func TestConfigCheck(t *testing.T) {
 		  # cncf < synadia
 		  #
 		  cncf {
-		    # SAAFHDZX7SGZ2SWHPS22JRPPK5WX44NPLNXQHR5C5RIF6QRI3U65VFY6C4
-		    nkey = "AD4YRVUJF2KASKPGRMNXTYKIYSCB3IHHB4Y2ME6B2PDIV5QJ23C2ZRIT"
+		    # 534180935730aeb358bf94ef8cdd13cec6bc7ba31900fcf89c1303d4d4035f7478f0acfb12fa726cb3dbcf80
+		    nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 		    users [
 		      {
-		        # SUAKINP3Z2BPUXWOFSW2FZC7TFJCMMU7DHKP2C62IJQUDASOCDSTDTRMJQ
-		        nkey = "UB57IEMPG4KOTPFV5A66QKE2HZ3XBXFHVRCCVMJEWKECMVN2HSH3VTSJ"
+		        # 5355f9b3aeafe7f9315aaf76a8df7ef8a45e38c84e7f61baa483779c5a82a4f9850f85e59fe3333081ecf306
+		        nkey = "550259f1d54fa40103de5f0237120301b52eb2901985b2298650dfc23a10e410216cd22e"
 		      }
 		    ]
 
@@ -565,13 +564,13 @@ func TestConfigCheck(t *testing.T) {
 		  # synadia > nats.io, cncf
 		  #
 		  synadia {
-		    # SAADJL5XAEM6BDYSWDTGVILJVY54CQXZM5ZLG4FRUAKB62HWRTPNSGXOHA
-		    nkey = "AC5GRL36RQV7MJ2GT6WQSCKDKJKYTK4T2LGLWJ2SEJKRDHFOQQWGGFQL"
+		    # 534180935730aeb358bf94ef8cdd13cec6bc7ba31900fcf89c1303d4d4035f7478f0acfb12fa726cb3dbcf80
+		    nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 		    users [
 		      {
-		        # SUAEL6RU3BSDAFKOHNTEOK5Q6FTM5FTAMWVIKBET6FHPO4JRII3CYELVNM
-		        nkey = "SCARKS2E3KVB7YORL2DG34XLT7PUCOL2SVM7YXV6ETHLW6Z46UUJ2VZ3"
+		        # 5355f9b3aeafe7f9315aaf76a8df7ef8a45e38c84e7f61baa483779c5a82a4f9850f85e59fe3333081ecf306
+		        nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d777"
 		      }
 		    ]
 
@@ -584,13 +583,13 @@ func TestConfigCheck(t *testing.T) {
 		  # nats < synadia
 		  #
 		  nats {
-		    # SUAJTM55JH4BNYDA22DMDZJSRBRKVDGSLYK2HDIOCM3LPWCDXIDV5Q4CIE
-		    nkey = "ADRZ42QBM7SXQDXXTSVWT2WLLFYOQGAFC4TO6WOAXHEKQHIXR4HFYJDS"
+		    # 534180935730aeb358bf94ef8cdd13cec6bc7ba31900fcf89c1303d4d4035f7478f0acfb12fa726cb3dbcf80
+		    nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 		    users [
 		      {
-		        # SUADZTYQAKTY5NQM7XRB5XR3C24M6ROGZLBZ6P5HJJSSOFUGC5YXOOECOM
-		        nkey = "UD6AYQSOIN2IN5OGC6VQZCR4H3UFMIOXSW6NNS6N53CLJA4PB56CEJJI"
+		        # 5355f9b3aeafe7f9315aaf76a8df7ef8a45e38c84e7f61baa483779c5a82a4f9850f85e59fe3333081ecf306
+		        nkey = "550259f1d54fa40103de5f0237120301b52eb2901985b2298650dfc23a10e410216cd22e"
 		      }
 		    ]
 
@@ -604,13 +603,13 @@ func TestConfigCheck(t *testing.T) {
 		  # cncf < synadia
 		  #
 		  cncf {
-		    # SAAFHDZX7SGZ2SWHPS22JRPPK5WX44NPLNXQHR5C5RIF6QRI3U65VFY6C4
-		    nkey = "AD4YRVUJF2KASKPGRMNXTYKIYSCB3IHHB4Y2ME6B2PDIV5QJ23C2ZRIT"
+		    # 534180935730aeb358bf94ef8cdd13cec6bc7ba31900fcf89c1303d4d4035f7478f0acfb12fa726cb3dbcf80
+		    nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 		    users [
 		      {
-		        # SUAKINP3Z2BPUXWOFSW2FZC7TFJCMMU7DHKP2C62IJQUDASOCDSTDTRMJQ
-		        nkey = "UB57IEMPG4KOTPFV5A66QKE2HZ3XBXFHVRCCVMJEWKECMVN2HSH3VTSJ"
+		        # 5355f9b3aeafe7f9315aaf76a8df7ef8a45e38c84e7f61baa483779c5a82a4f9850f85e59fe3333081ecf306
+		        nkey = "550259f1d54fa40103de5f0237120301b52eb2901985b2298650dfc23a10e410216cd22e"
 		      }
 		    ]
 
@@ -649,11 +648,11 @@ func TestConfigCheck(t *testing.T) {
 			    }
 
 			    synadia {
-				nkey = "AC5GRL36RQV7MJ2GT6WQSCKDKJKYTK4T2LGLWJ2SEJKRDHFOQQWGGFQL"
+				nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 				users [
 				  {
-				    nkey = "UCARKS2E3KVB7YORL2DG34XLT7PUCOL2SVM7YXV6ETHLW6Z46UUJ2VZ3"
+				    nkey = "550259f1d54fa40103de5f0237120301b52eb2901985b2298650dfc23a10e410216cd22e"
 				    permissions = $PERMISSIONS
 				  }
 				]
@@ -676,11 +675,11 @@ func TestConfigCheck(t *testing.T) {
 			    }
 
 			    synadia {
-				nkey = "AC5GRL36RQV7MJ2GT6WQSCKDKJKYTK4T2LGLWJ2SEJKRDHFOQQWGGFQL"
+				nkey = "410216ce40fd4adaba4e52cf3fce7f35735a6d7bd603bf6e811654a72f04a4a3d109d5f7"
 
 				users [
 				  {
-				    nkey = "UCARKS2E3KVB7YORL2DG34XLT7PUCOL2SVM7YXV6ETHLW6Z46UUJ2VZ3"
+				    nkey = "550259f1d54fa40103de5f0237120301b52eb2901985b2298650dfc23a10e410216cd22e"
 				  }
 				]
 				exports = [
@@ -1555,7 +1554,6 @@ func TestConfigCheckIncludes(t *testing.T) {
 }
 
 func TestConfigCheckMultipleErrors(t *testing.T) {
-	t.Skip("FIXME generate test server config")
 	opts := &Options{
 		CheckConfig: true,
 	}
@@ -1585,9 +1583,9 @@ func TestConfigCheckMultipleErrors(t *testing.T) {
 		`./configs/multiple_errors.conf:2:1: Cannot have a user/pass and token`,
 		`./configs/multiple_errors.conf:10:1: unknown field "monitoring"`,
 		`./configs/multiple_errors.conf:67:3: Cluster authorization does not allow multiple users`,
-		`./configs/multiple_errors.conf:21:5: Not a valid public nkey for an account: "OC5GRL36RQV7MJ2GT6WQSCKDKJKYTK4T2LGLWJ2SEJKRDHFOQQWGGFQL"`,
+		`./configs/multiple_errors.conf:21:5: Not a valid public nkey for an account: "410256b20508f818ef93be13e17af435c1bc0ad17fd3c9d5c87d33ffb382fb77b32b3777"`,
 		`./configs/multiple_errors.conf:26:9: Not a valid public nkey for a user`,
-		`./configs/multiple_errors.conf:36:5: Not a valid public nkey for an account: "ODRZ42QBM7SXQDXXTSVWT2WLLFYOQGAFC4TO6WOAXHEKQHIXR4HFYJDS"`,
+		`./configs/multiple_errors.conf:36:5: Not a valid public nkey for an account: "410256b20508f818ef93be13e17af435c1bc0ad17fd3c9d5c87d33ffb382fb77b32b3777"`,
 		`./configs/multiple_errors.conf:41:9: Not a valid public nkey for a user`,
 	}
 	for _, msg := range errs {
