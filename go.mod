@@ -4,7 +4,7 @@ go 1.16
 
 replace (
 	github.com/nats-io/jwt/v2 v2.0.2 => github.com/dongnguyenvt/jwt/v2 v2.0.6
-	github.com/nats-io/nats.go v1.11.1-0.20210623165838-4b75fc59ae30 => github.com/dongnguyenvt/nats.go v1.11.1
+	github.com/nats-io/nats.go v1.11.1-0.20210623165838-4b75fc59ae30 => github.com/dongnguyenvt/nats.go v1.11.3
 	github.com/nats-io/nkeys v0.3.0 => github.com/dongnguyenvt/nkeys v0.3.5
 )
 
