@@ -95,8 +95,8 @@ github.com/dgryski/go-bitstream v0.0.0-20180413035011-3522498ce2c8/go.mod h1:VMa
 github.com/dgryski/go-sip13 v0.0.0-20181026042036-e10d5fee7954/go.mod h1:vAd38F8PWV+bWy6jNmig1y/TA+kYO4g3RSRF0IAv0no=
 github.com/dlclark/regexp2 v1.2.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
 github.com/docker/docker v1.4.2-0.20180625184442-8e610b2b55bf/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
-github.com/dongnguyenvt/jwt/v2 v2.0.4 h1:3Zlg0xhoIdCOMMM8zerIZ0LWszWlQ15LWu/l8KtmQRY=
-github.com/dongnguyenvt/jwt/v2 v2.0.4/go.mod h1:I9kaK5u/UCEdPaLwURE5UVJqykJqFBy/5D6meXAPlf4=
+github.com/dongnguyenvt/jwt/v2 v2.0.5 h1:grJQpMHQKzzFlaVSjPsAQgYmS/58WnO9CxpIPoTLha4=
+github.com/dongnguyenvt/jwt/v2 v2.0.5/go.mod h1:I9kaK5u/UCEdPaLwURE5UVJqykJqFBy/5D6meXAPlf4=
 github.com/dongnguyenvt/nats.go v1.11.1 h1:witM9pO4de5auBbKUnlZrVZq4N1GqZ0c239Y/invywk=
 github.com/dongnguyenvt/nats.go v1.11.1/go.mod h1:+13mv8ewNsToiOK5lrL54F3Ztd45jglY7btdBvUyX7c=
 github.com/dongnguyenvt/nkeys v0.3.4 h1:eke9XZJYSAVbEch9yNL16Oho/B262irk06IrRdPh+BQ=
