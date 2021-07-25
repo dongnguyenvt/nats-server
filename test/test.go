@@ -62,32 +62,18 @@ func RunRandClientPortServer() *server.Server {
 	return RunServer(&opts)
 }
 
-// To turn on server tracing and debugging and logging which are
-// normally suppressed.
-var (
-	doLog   = false
-	doTrace = false
-	doDebug = false
-)
-
 // RunServer starts a new Go routine based server
 func RunServer(opts *server.Options) *server.Server {
 	if opts == nil {
 		opts = &DefaultTestOptions
 	}
-	// Optionally override for individual debugging of tests
-	opts.NoLog = !doLog
-	opts.Trace = doTrace
-	opts.Debug = doDebug
 
 	s, err := server.NewServer(opts)
 	if err != nil || s == nil {
 		panic(fmt.Sprintf("No NATS Server object returned: %v", err))
 	}
 
-	if doLog {
-		s.ConfigureLogger()
-	}
+	s.ConfigureLogger()
 
 	// Run server in Go routine.
 	go s.Start()
